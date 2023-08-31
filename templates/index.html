@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App Demo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>User Input Form</h1>
+        <form method="POST" action="/">
+            <label for="data">Enter Data:</label>
+            <input type="text" name="data" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
